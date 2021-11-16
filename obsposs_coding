@@ -86,5 +86,5 @@ ebird$BREEDING.CODE.WITH.OBSPOSS <- ifelse(is.na(ebird$OBSPOSS.BREEDING.CODE), e
 
 # (B) in Intro
 # Optional -- Export out a small table with just OBSID plus the new code and category codes integrated
-# export2 <- obsposs[, c("GLOBAL.UNIQUE.IDENTIFIER","BREEDING.CATEGORY.WITH.OBSPOSS","BREEDING.CODE.WITH.OBSPOSS")]
+# export2 <- ebird[, c("GLOBAL.UNIQUE.IDENTIFIER","BREEDING.CATEGORY.WITH.OBSPOSS","BREEDING.CODE.WITH.OBSPOSS")]
 # write.csv(export2, file= "New_breeding_codes_and_cats_with_integrated_obsposs_values.csv", row.names=FALSE)
