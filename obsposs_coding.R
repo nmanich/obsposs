@@ -13,6 +13,7 @@
 # (C) Add as a new column in final database with the new obsposs records
 # (D) Add columns in the final database with the obsposs records integrated into breeding codes
 # (E) Export a full EBD with both C and D
+# (F) Export both C and D for only the species we are making obsposs changes to.
 
 # UNRESOLVED: Need code for block_evidence.R to make a map showing obsposs records
 # Easiest fix would be to overwrite E with H and change label?
@@ -92,6 +93,7 @@ ebird$BREEDING.CODE.WITH.OBSPOSS <- ifelse(is.na(ebird$OBSPOSS.BREEDING.CODE), e
 # Subset to just obsposs species
 justobspossspecies <- ebird[grepl("Spotted Sandpiper|Ring-billed Gull|Herring Gull|Great Black-backed Gull|Laughing Gull|Caspian Tern|Forster's Tern|Common Tern|Double-crested Cormorant|American White Pelican|Great Blue Heron|Great Egret|Snowy Egret|Cattle Egret|Black-crowned Night-Heron|Yellow-crowned Night-Heron|Turkey Vulture|Whooping Crane", ebird$COMMON.NAME), ]
 
+# (F) in Intro
 # Export just obsposs species
 write.csv(justobspossspecies, file= "JustObspossSpecies_New_breeding_codes_and_cats_with_integrated_obsposs_values.csv", row.names=FALSE)
 
