@@ -9,7 +9,7 @@
 
 # Then you can do a variety of things with this code:
 # (A) Export several columns (breeding code, breeding category) with just the new changed obsposs records
-# (B) Export several columns (breeding code, breeding category) but with the obsposs records integrated into the breeding code and category column table with Merge new values for those species into the full records for those species 
+# (B) Export several columns (breeding code, breeding category) but with the obsposs records integrated into the breeding code and category columns 
 # (C) Add as a new column in final database with the new obsposs records
 # (D) Add columns in the final database with the obsposs records integrated into breeding codes
 # (E) Export a full EBD with both C and D
