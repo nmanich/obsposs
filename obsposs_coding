@@ -88,3 +88,10 @@ ebird$BREEDING.CODE.WITH.OBSPOSS <- ifelse(is.na(ebird$OBSPOSS.BREEDING.CODE), e
 # Optional -- Export out a small table with just OBSID plus the new code and category codes integrated
 # export2 <- ebird[, c("GLOBAL.UNIQUE.IDENTIFIER","BREEDING.CATEGORY.WITH.OBSPOSS","BREEDING.CODE.WITH.OBSPOSS")]
 # write.csv(export2, file= "New_breeding_codes_and_cats_with_integrated_obsposs_values.csv", row.names=FALSE)
+
+# Subset to just obsposs species
+justobspossspecies <- ebird[grepl("Spotted Sandpiper|Ring-billed Gull|Herring Gull|Great Black-backed Gull|Laughing Gull|Caspian Tern|Forster's Tern|Common Tern|Double-crested Cormorant|American White Pelican|Great Blue Heron|Great Egret|Snowy Egret|Cattle Egret|Black-crowned Night-Heron|Yellow-crowned Night-Heron|Turkey Vulture|Whooping Crane", ebird$COMMON.NAME), ]
+
+# Export just obsposs species
+write.csv(justobspossspecies, file= "JustObspossSpecies_New_breeding_codes_and_cats_with_integrated_obsposs_values.csv", row.names=FALSE)
+
