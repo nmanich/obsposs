@@ -3,7 +3,7 @@
 # See "Other Observations" with gull maps in "The Second Atlas of Breeding Birds in Ohio"
 
 # The Process:
-# 1. SQL pulls all records in the obsposs window for selected species
+# 1. SQL pulls all records in the obsposs window for selected species (this is in EBD format if you want to pull via some other method)
     # https://github.com/nmanich/eBird_to_postgreSQL/blob/master/Queries/obsposs%20species.sql
 # 2. R code to recode O H and S in obsposs window become to obsposs (and C1 and C2 cats become 1.5) (this code below)
 
